@@ -19,6 +19,12 @@
           Add post
         </button>
       </div>
+      <div class="panel-block level mb-0">
+        <div class="level-left">Title</div>
+        <div class="level-item">Author</div>
+        <div class="level-item">Updated at</div>
+        <div class="level-item">Actions</div>
+      </div>
       <template v-if="!loading">
         <template v-if="posts.length <= 0">
           <p class="panel-block">No posts</p>
@@ -48,8 +54,6 @@ export default {
   },
 
   components: { Post, PostRow, Pagination, Message },
-
-  // TODO: fix added posts overfilling full page
 
   methods: {
     getPosts() {

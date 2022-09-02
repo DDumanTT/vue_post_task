@@ -1,5 +1,5 @@
 <template>
-  <div class="panel-block level">
+  <div class="panel-block level mb-0">
     <div class="level-left">{{ post.title }}</div>
     <div class="level-item">{{ post.author.name }}</div>
     <div class="level-item">{{ updatedAt }}</div>
